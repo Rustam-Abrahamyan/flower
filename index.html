@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A flower for spread the love</title>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Share:400,700,700italic|Marko+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
+	<link href="dist/css/stylesheet.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="greeting_card_send" id="greeting_send">
+	<div class="greeting-inner">
+		<h1>Spread<br>the<br><span>love</span></h1>
+		<form>
+			<div class="row">
+				<label for="name_from">From</label>
+				<input type="text" id="name_from" />
+			</div>
+			<div class="row">
+				<label for="name_to">To</label>
+				<input type="text" id="name_to" />
+			</div>
+			<div class="row">
+				<label for="colorRange">Choose your flower color</label>
+				<input class="jscolor" id="colorRange"  value="ffffff">
+			</div>
+			<div class="row">
+				<label for="colorRange">Choose your background color</label>
+				<input class="jscolor" id="colorBGRange"  value="FCE3F1">
+			</div>
+			<input id="send" type="submit" value="Copy Link"/>
+			<div class="copied">Link has been copied to clipboard. </div>
+			<div class="errorMessage">Please enter names.</div>
+			<div id="sharerlink"></div>
+		</form>
+	</div>
+</div>
+
+
+<div class="greeting_card_receive" id="greeting_receive">
+	<div class="greeting-inner">
+		<h1>a flower from <span id="fromName"></span> to <span id="toName"></span></h1>
+		
+		<a href="#" id="send_own_message">Now it's your turn! Spread some love</a>
+	</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.5/clipboard.min.js"></script>
+
+<script src="dist/js/tween.min.js"></script>	
+<script src="dist/js/three.min.js"></script>	
+<script src="dist/js/orbit_controls.js"></script>	
+<script src="dist/js/jscolor.min.js"></script>	
+<script src="dist/js/main_script.min.js"></script>	
+</body>
+
+</html>
